@@ -3,78 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - JobTracker</title>
+    <title>Privacy Policy - HireTracker</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container header-content">
             <a href="index.html">
-                <img src="images/app-icon.png" alt="JobTracker Icon" class="app-icon">
+                <img src="images/app-icon.png" alt="HireTracker Icon" class="app-icon animate-in">
             </a>
-            <h1>Privacy Policy</h1>
+            <h1 class="animate-in">Privacy Policy</h1>
+            <p class="tagline animate-in">Your privacy matters to us</p>
         </div>
     </header>
 
-    <main class="container">
-        <div class="privacy-content">
-            <section>
-                <h2>Introduction</h2>
-                <p>Your privacy is important to us. This Privacy Policy explains how JobTracker ("we", "our", or "us") collects, uses, and protects your personal information.</p>
-            </section>
+    <main>
+        <div class="container">
+            <div class="privacy-content">
+                <section class="policy-section card animate-in">
+                    <div class="section-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h2>Introduction</h2>
+                    <p>At HireTracker, we take your privacy seriously. This policy explains how we collect, use, and protect your information while using our app.</p>
+                </section>
 
-            <section>
-                <h2>Information We Collect</h2>
-                <p>JobTracker collects only the information necessary to provide our services:</p>
-                <ul>
-                    <li>Job application details you enter</li>
-                    <li>Company information from our auto-complete service</li>
-                    <li>Basic usage analytics to improve the app</li>
-                </ul>
-            </section>
+                <section class="policy-section card animate-in">
+                    <div class="section-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h2>Data Collection</h2>
+                    <div class="policy-grid">
+                        <div class="policy-item">
+                            <h4><i class="fas fa-check"></i> Application Data</h4>
+                            <p>Information you enter about job applications</p>
+                        </div>
+                        <div class="policy-item">
+                            <h4><i class="fas fa-check"></i> Company Information</h4>
+                            <p>Data from our auto-complete service</p>
+                        </div>
+                        <div class="policy-item">
+                            <h4><i class="fas fa-check"></i> Usage Analytics</h4>
+                            <p>Anonymous app usage statistics</p>
+                        </div>
+                    </div>
+                </section>
 
-            <section>
-                <h2>How We Use Your Information</h2>
-                <p>We use your information to:</p>
-                <ul>
-                    <li>Provide job application tracking services</li>
-                    <li>Improve our app functionality</li>
-                    <li>Send notifications you've requested</li>
-                    <li>Analyze app performance and usage patterns</li>
-                </ul>
-            </section>
+                <section class="policy-section card animate-in">
+                    <div class="section-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h2>Data Storage</h2>
+                    <p>Your job application data is stored locally on your device. We do not store your personal information on our servers.</p>
+                    <div class="security-features">
+                        <div class="security-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Local Storage</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Privacy Focused</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-mobile-screen"></i>
+                            <span>Device Only</span>
+                        </div>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Data Storage</h2>
-                <p>All your job application data is stored locally on your device. We do not store your personal information on our servers.</p>
-            </section>
+                <section class="policy-section card animate-in">
+                    <div class="section-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h2>Third-Party Services</h2>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <h4>Clearbit API</h4>
+                                <p>Company information auto-completion</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Firebase Analytics</h4>
+                                <p>Anonymous usage statistics</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-bug-slash"></i>
+                            <div>
+                                <h4>Firebase Crashlytics</h4>
+                                <p>Crash reporting</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Third-Party Services</h2>
-                <p>We use the following third-party services:</p>
-                <ul>
-                    <li>Clearbit API for company information auto-completion</li>
-                    <li>Firebase Analytics for app usage statistics</li>
-                    <li>Firebase Crashlytics for crash reporting</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:privacy@yourapp.com">privacy@yourapp.com</a></p>
-            </section>
+                <section class="policy-section card animate-in">
+                    <div class="section-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions about our privacy policy, please contact us:</p>
+                    <br>
+                    <a href="mailto:privacy@hiretracker.app" class="app-store-button">
+                        <i class="fas fa-envelope"></i>
+                        <span style="margin-left: 8px;">Email Privacy Team</span>
+                    </a>
+                </section>
+            </div>
         </div>
-
-        <section class="links">
-            <a href="index.html">Home</a>
-            <a href="support.html">Support</a>
-        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 JobTracker. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
+                <a href="mailto:support@hiretracker.app">Contact</a>
+            </div>
+            <p>&copy; 2024 HireTracker. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Animation script (same as before)
+    </script>
 </body>
 </html>
