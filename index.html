@@ -3,46 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobTracker - Job Application Tracking Made Simple</title>
+    <title>HireTracker - Smart Job Application Management</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="images/app-icon.png" alt="JobTracker Icon" class="app-icon">
-            <h1>JobTracker</h1>
-            <p class="tagline">Track Your Job Applications with Ease</p>
+        <div class="container header-content">
+            <img src="images/app-icon.png" alt="HireTracker Icon" class="app-icon animate-in">
+            <h1 class="animate-in">HireTracker</h1>
+            <p class="tagline animate-in">Streamline Your Job Search Journey</p>
         </div>
     </header>
 
-    <main class="container">
-        <section class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Organize applications by projects</li>
-                <li>Track application stages</li>
-                <li>Company information auto-completion</li>
-                <li>Application status timeline</li>
-                <li>Detailed analytics and insights</li>
-            </ul>
-        </section>
+    <main>
+        <div class="container">
+            <section class="features">
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-folder-tree"></i>
+                    </div>
+                    <h3>Organized Projects</h3>
+                    <p>Keep your job searches organized by creating separate projects for different career paths or locations.</p>
+                </div>
 
-        <section class="cta">
-            <a href="https://apps.apple.com/app/your-app-id" class="app-store-button">
-                Download on the App Store
-            </a>
-        </section>
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-timeline"></i>
+                    </div>
+                    <h3>Application Timeline</h3>
+                    <p>Track every stage of your applications with a beautiful, intuitive timeline view.</p>
+                </div>
 
-        <section class="links">
-            <a href="support.html">Support</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-        </section>
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Smart Company Info</h3>
+                    <p>Automatic company information completion with logos and details.</p>
+                </div>
+
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Reminders</h3>
+                    <p>Never miss an interview or follow-up with built-in reminders and notifications.</p>
+                </div>
+
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Insights & Analytics</h3>
+                    <p>Gain valuable insights into your job search with detailed analytics and statistics.</p>
+                </div>
+
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Advanced Filters</h3>
+                    <p>Quickly find applications with powerful filtering and search capabilities.</p>
+                </div>
+            </section>
+
+            <section class="cta animate-in">
+                <h2>Ready to Streamline Your Job Search?</h2>
+                <p>Download HireTracker today and take control of your career journey.</p>
+                <br>
+                <a href="https://apps.apple.com/app/your-app-id" class="app-store-button">
+                    <i class="fab fa-app-store-ios"></i>
+                    <span style="margin-left: 8px;">Download on the App Store</span>
+                </a>
+            </section>
+        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 JobTracker. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="mailto:support@hiretracker.app">Contact Us</a>
+            </div>
+            <p>&copy; 2024 HireTracker. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Simple animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
