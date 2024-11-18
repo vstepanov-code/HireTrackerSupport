@@ -3,66 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - JobTracker</title>
+    <title>Support - HireTracker</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container header-content">
             <a href="index.html">
-                <img src="images/app-icon.png" alt="JobTracker Icon" class="app-icon">
+                <img src="images/app-icon.png" alt="HireTracker Icon" class="app-icon animate-in">
             </a>
-            <h1>JobTracker Support</h1>
+            <h1 class="animate-in">Support Center</h1>
+            <p class="tagline animate-in">We're here to help you succeed</p>
         </div>
     </header>
 
-    <main class="container">
-        <div class="support-section">
-            <section class="contact">
-                <h2>Contact Us</h2>
-                <p>Having issues or questions? Contact us at: <a href="mailto:support@yourapp.com">support@yourapp.com</a></p>
-            </section>
-
-            <section class="faq">
-                <h2>Frequently Asked Questions</h2>
-                
-                <div class="faq-item">
-                    <h3>How do I create a new project?</h3>
-                    <p>Tap the + button in the top right corner of the Projects screen. Enter a name and optional description for your project, then tap Create.</p>
+    <main>
+        <div class="container">
+            <section class="support-section animate-in">
+                <div class="contact card">
+                    <i class="fas fa-headset" style="font-size: 48px; color: var(--primary-color); margin-bottom: 16px;"></i>
+                    <h2>Need Help?</h2>
+                    <p>We typically respond within 24 hours</p>
+                    <br>
+                    <a href="mailto:support@hiretracker.app" class="app-store-button">
+                        <i class="fas fa-envelope"></i>
+                        <span style="margin-left: 8px;">Contact Support</span>
+                    </a>
                 </div>
 
-                <div class="faq-item">
-                    <h3>How do I track a new job application?</h3>
-                    <p>Open a project and tap the + button. Enter the company name (it will auto-complete), position, and any additional details. The application will automatically start in the "Applied" stage.</p>
-                </div>
+                <section class="faq">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-grid">
+                        <div class="faq-card animate-in">
+                            <div class="faq-icon">
+                                <i class="fas fa-folder-plus"></i>
+                            </div>
+                            <h3>Creating Projects</h3>
+                            <p>Tap the + button in the top right corner of the Projects screen. Enter a name and optional description for your project, then tap Create.</p>
+                        </div>
 
-                <div class="faq-item">
-                    <h3>How do I update an application's status?</h3>
-                    <p>Open the application details and tap "Add Stage". Select the new status and add any relevant notes or dates. The timeline will automatically update to show the progression.</p>
-                </div>
+                        <div class="faq-card animate-in">
+                            <div class="faq-icon">
+                                <i class="fas fa-file-circle-plus"></i>
+                            </div>
+                            <h3>Adding Applications</h3>
+                            <p>Open a project and tap the + button. Enter the company name (it will auto-complete), position, and any additional details. The application will automatically start in the "Applied" stage.</p>
+                        </div>
 
-                <div class="faq-item">
-                    <h3>Can I set reminders for interviews?</h3>
-                    <p>Yes! When adding or updating a stage, toggle the reminder switch. You'll receive a notification at the specified time.</p>
-                </div>
+                        <div class="faq-card animate-in">
+                            <div class="faq-icon">
+                                <i class="fas fa-arrow-right-arrow-left"></i>
+                            </div>
+                            <h3>Updating Status</h3>
+                            <p>Open the application details and tap "Add Stage". Select the new status and add any relevant notes or dates. The timeline will automatically update to show the progression.</p>
+                        </div>
 
-                <div class="faq-item">
-                    <h3>How do I filter applications?</h3>
-                    <p>Use the filter chips at the top of the applications list to show only applications in specific stages. You can select multiple filters at once.</p>
-                </div>
+                        <div class="faq-card animate-in">
+                            <div class="faq-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3>Setting Reminders</h3>
+                            <p>When adding or updating a stage, toggle the reminder switch. You'll receive a notification at the specified time.</p>
+                        </div>
+
+                        <div class="faq-card animate-in">
+                            <div class="faq-icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <h3>Filtering Applications</h3>
+                            <p>Use the filter chips at the top of the applications list to show only applications in specific stages. You can select multiple filters at once.</p>
+                        </div>
+
+                        <div class="faq-card animate-in">
+                            <div class="faq-icon">
+                                <i class="fas fa-chart-simple"></i>
+                            </div>
+                            <h3>Viewing Analytics</h3>
+                            <p>Navigate to any project and tap the Analytics tab to view insights about your applications, success rates, and response times.</p>
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
-
-        <section class="links">
-            <a href="index.html">Home</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 JobTracker. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="mailto:support@hiretracker.app">Contact</a>
+            </div>
+            <p>&copy; 2024 HireTracker. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Animation script (same as index.html)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
